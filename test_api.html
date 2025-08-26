@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .success { color: green; }
+        .error { color: red; }
+        button { padding: 10px 20px; margin: 10px; }
+        #result { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Test de API de Eventos</h1>
+    
+    <button onclick="testGet()">Test GET /api/eventos/</button>
+    <button onclick="testPost()">Test POST /api/eventos/</button>
+    
+    <div id="result"></div>
+    
+    <script>
+        const API_BASE = 'http://127.0.0.1:8000/api';
+        
+        function showResult(message, isError = false) {
+            const result = document.getElementById('result');
+            result.innerHTML = `<div class="${isError ? 'error' : 'success'}">${message}</div>`;
+        }
+        
+        async function testGet() {
+            try {
+                showResult('Probando GET...');
+                const response = await fetch(`${API_BASE}/eventos/`);
+                const data = await response.json();
+                showResult(`GET exitoso: ${JSON.stringify(data, null, 2)}`);
+            } catch (error) {
+                showResult(`Error en GET: ${error.message}`, true);
+            }
+        }
+        
+        async function testPost() {
+            try {
+                showResult('Probando POST...');
+                const testEvent = {
+                    nombre: 'Evento de Prueba',
+                    fecha: '2024-12-25',
+                    lugar: 'Lugar de Prueba',
+                    descripcion: 'Descripción de prueba'
+                };
+                
+                const response = await fetch(`${API_BASE}/eventos/`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(testEvent)
+                });
+                
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(`HTTP ${response.status}: ${errorText}`);
+                }
+                
+                const data = await response.json();
+                showResult(`POST exitoso: ${JSON.stringify(data, null, 2)}`);
+            } catch (error) {
+                showResult(`Error en POST: ${error.message}`, true);
+            }
+        }
+    </script>
+</body>
+</html>

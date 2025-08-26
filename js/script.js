@@ -2,6 +2,8 @@ const API_BASE = (window.location.protocol === 'file:')
   ? 'http://127.0.0.1:8000/api'
   : `${window.location.origin}/api`;
 
+console.log('API Base URL:', API_BASE);
+
 // Registrar Evento (solo en registrar.html)
 const formRegistrar = document.getElementById('formRegistrar');
 if (formRegistrar) {
@@ -59,12 +61,35 @@ function renderEventos(lista) {
 // Cargar lista inicial en index.html
 async function cargarEventosInicial(query = '') {
     try {
-        const response = await fetch(`${API_BASE}/eventos/${query ? `?search=${encodeURIComponent(query)}` : ''}`);
-        if (!response.ok) throw new Error('Error al cargar eventos');
+        console.log('Cargando eventos...');
+        const url = `${API_BASE}/eventos/${query ? `?search=${encodeURIComponent(query)}` : ''}`;
+        console.log('URL de petición:', url);
+        
+        const response = await fetch(url);
+        console.log('Response status:', response.status);
+        
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error('Error response:', errorText);
+            throw new Error(`Error al cargar eventos: ${response.status} - ${errorText}`);
+        }
+        
         const data = await response.json();
+        console.log('Eventos cargados:', data);
         renderEventos(data);
+        
     } catch (e) {
-        console.error(e);
+        console.error('Error al cargar eventos:', e);
+        const eventosBody = document.getElementById('eventos-body');
+        if (eventosBody) {
+            eventosBody.innerHTML = `
+                <tr>
+                    <td colspan="5" style="text-align: center; color: red;">
+                        Error al cargar eventos: ${e.message}
+                    </td>
+                </tr>
+            `;
+        }
     }
 }
 

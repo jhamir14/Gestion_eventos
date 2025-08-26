@@ -1,0 +1,234 @@
+/* ===== SWITCH ===== */
+.switch-container {
+  margin-left: 15px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  border-radius: 26px;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #3498db;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* ===== MODO OSCURO ===== */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark-mode header {
+  background: #2c2c2c;
+}
+
+body.dark-mode table {
+  background: #2b2b2b;
+  color: #eee;
+}
+
+body.dark-mode table th {
+  background: #444;
+}
+
+body.dark-mode form {
+  background: #2b2b2b;
+  color: #eee;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+body.dark-mode .search-box {
+  background: #2c2c2c;
+  box-shadow: 0 0 5px rgba(255,255,255,0.1);
+}
+
+
+
+
+
+
+#busqueda {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#buscar {
+  width: 260px;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+}
+
+#buscar::placeholder {
+  color: #888;
+}
+
+
+
+/* ======== ESTILOS GENERALES ======== */
+
+* {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px; /* puedes probar con 16px, 17px o 18px */
+}
+
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+header nav a {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  background: #217dbb;
+}
+
+/* ======== TABLA DE EVENTOS ======== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+table th {
+  background: #3498db;
+  color: #fff;
+}
+
+table td button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+table td button:hover {
+  text-decoration: underline;
+}
+/* ======== ACCIONES EN TABLA (Editar / Eliminar) ======== */
+a.btn-edit,
+button.btn-delete {
+  background: #3498db;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+  transition: background 0.3s ease, transform 0.02s ease;
+}
+
+a.btn-edit:hover,
+button.btn-delete:hover {
+  background: #217dbb;
+  text-decoration: none;
+}
+
+a.btn-edit:active,
+button.btn-delete:active {
+  transform: translateY(1px);
+}
+/* ======== BARRA DE BÚSQUEDA ======== */
+#busqueda {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.search-box {
+  display: inline-block;
+  width: 60%;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.search-box input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52,152,219,0.5);
+}
