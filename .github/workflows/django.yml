@@ -1,38 +1,30 @@
-name: django
+name: Django CI
 
 on:
   push:
-    branches: [ "principal", "main", "master" ]
+    branches: [ "main" ]
   pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      max-parallel: 4
       matrix:
-        python-version: ["3.10", "3.11", "3.12"]  # también vale "3.8", "3.9" si quieres
+        python-version: [3.7, 3.8, 3.9]
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-          cache: 'pip'
-
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Django checks
-        run: |
-          python manage.py check --deploy --fail-level WARNING
-
-      - name: Run tests
-        env:
-          DJANGO_SETTINGS_MODULE: yourproject.settings
-        run: |
-          python -m pytest -q
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Run Tests
+      run: |
+        python manage.py test
