@@ -24,3 +24,4 @@ router.register(r'eventos', views.EventoViewSet)
 urlpatterns = [
     path('api/', include(router.urls)),
 ]
+

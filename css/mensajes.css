@@ -3,34 +3,27 @@
   font-size: 17px; /* puedes probar con 16px, 17px o 18px */
 }
 
-.mensaje-exito {
-    background-color: #d4edda;
-    color: #155724;
-    padding: 15px;
-    margin: 15px 0;
-    border: 1px solid #c3e6cb;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.mensaje-error {
-    background-color: #f8d7da;
-    color: #721c24;
-    padding: 15px;
-    margin: 15px 0;
-    border: 1px solid #f5c6cb;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-}
 
 #mensaje {
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  display: inline-block;
+  width: 100%;
+}
+
+.exito {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
 }
 body {
   font-family: 'Nunito', sans-serif;

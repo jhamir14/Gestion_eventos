@@ -1,234 +1,215 @@
-/* ===== SWITCH ===== */
-.switch-container {
-  margin-left: 15px;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 26px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  inset: 0;
-  background-color: #ccc;
-  border-radius: 26px;
-  transition: 0.3s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-input:checked + .slider {
-  background-color: #3498db;
-}
-
-input:checked + .slider:before {
-  transform: translateX(24px);
-}
-
-/* ===== MODO OSCURO ===== */
-body.dark-mode {
-  background: #1e1e1e;
-  color: #eee;
-}
-
-body.dark-mode header {
-  background: #2c2c2c;
-}
-
-body.dark-mode table {
-  background: #2b2b2b;
-  color: #eee;
-}
-
-body.dark-mode table th {
-  background: #444;
-}
-
-body.dark-mode form {
-  background: #2b2b2b;
-  color: #eee;
-}
-
-body.dark-mode input,
-body.dark-mode textarea {
-  background: #333;
-  color: #eee;
-  border: 1px solid #555;
-}
-
-body.dark-mode .search-box {
-  background: #2c2c2c;
-  box-shadow: 0 0 5px rgba(255,255,255,0.1);
-}
-
-
-
-
-
-
-#busqueda {
+/* =========================
+   ESTILOS GLOBALES
+   (afectan a todas las páginas)
+   ========================= */
+.header-left {
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  align-items: center;
 }
 
-#buscar {
-  width: 260px;
-  padding: 8px 12px;
+.btn-registrar {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #27ae60;          /* verde principal */
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
-  font-family: "Nunito", sans-serif;
-  border: 1px solid #ccc;
+  text-decoration: none;
   border-radius: 8px;
-  outline: none;
-  background: #fff;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-#buscar::placeholder {
-  color: #888;
+.btn-registrar:hover {
+  background: #1e874b;         /* verde más oscuro al pasar el mouse */
+  transform: scale(1.05);      /* pequeño efecto de aumento */
+}
+
+.btn-registrar:active {
+  transform: scale(0.98);      /* leve efecto al presionar */
 }
 
 
+   .btn-edit {
+  display: inline-block;
+  background-color: #7ed0ff; /* Amarillo */
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
 
-/* ======== ESTILOS GENERALES ======== */
+.btn-edit:hover {
+  background-color: #0097ee; /* Amarillo más oscuro */
+}
+
+.btn-delete {
+  display: inline-block;
+  background-color: #df5765; /* Rojo */
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 6px;
+}
+
+.btn-delete:hover {
+  background-color: #bd2130; /* Rojo más oscuro */
+}
 
 * {
-  font-family: 'Nunito', sans-serif;
-  font-size: 17px; /* puedes probar con 16px, 17px o 18px */
+  box-sizing: border-box;
+}
+.accion-editar {
+  background-color: #ffc107; /* Amarillo */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.accion-editar:hover {
+  background-color: #e0a800; /* Amarillo más oscuro al pasar el mouse */
+}
 
 body {
-  background: #f5f7fa;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
   color: #333;
+  background-color: #f5f7fa;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+input, button, textarea {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+/* Botones generales */
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Formularios generales */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* =========================
+   ESTILOS EXCLUSIVOS DEL DASHBOARD
+   (solo aplican cuando body tiene class="dashboard")
+   ========================= */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar lateral */
+.dashboard .sidebar {
+  width: 250px;
+  background-color: #1f2937;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard .sidebar h2 {
+  margin-bottom: 30px;
+}
+.dashboard .sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.dashboard .sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Contenido principal */
+.dashboard .main-content {
+  flex: 1;
   padding: 20px;
 }
 
-header {
+/* Encabezado */
+.dashboard header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+.dashboard .header-left h1 {
+  margin: 0;
+}
+.dashboard .header-right {
+  display: flex;
+  align-items: center;
+}
+.dashboard .header-right input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-header h1 {
-  font-size: 1.8rem;
-  color: #2c3e50;
-}
-
-header nav a {
-  background: #3498db;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-header nav a:hover {
-  background: #217dbb;
-}
-
-/* ======== TABLA DE EVENTOS ======== */
-table {
+/* Tablas dentro del dashboard */
+.dashboard table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
-  border-radius: 8px;
+  background: white;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
-
-table th, table td {
+.dashboard table th, 
+.dashboard table td {
   padding: 12px;
+  border-bottom: 1px solid #ddd;
   text-align: left;
-  border-bottom: 1px solid #eee;
 }
-
-table th {
-  background: #3498db;
-  color: #fff;
+.dashboard table th {
+  background-color: #f0f0f0;
+  font-weight: 700;
 }
-
-table td button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  margin-right: 8px;
-}
-
-table td button:hover {
-  text-decoration: underline;
-}
-/* ======== ACCIONES EN TABLA (Editar / Eliminar) ======== */
-a.btn-edit,
-button.btn-delete {
-  background: #3498db;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 6px;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  margin-right: 8px;
-  transition: background 0.3s ease, transform 0.02s ease;
-}
-
-a.btn-edit:hover,
-button.btn-delete:hover {
-  background: #217dbb;
-  text-decoration: none;
-}
-
-a.btn-edit:active,
-button.btn-delete:active {
-  transform: translateY(1px);
-}
-/* ======== BARRA DE BÚSQUEDA ======== */
-#busqueda {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.search-box {
-  display: inline-block;
-  width: 60%;
-  position: relative;
-}
-
-.search-box input {
-  width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  font-size: 15px;
-  outline: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.search-box input:focus {
-  border-color: #3498db;
-  box-shadow: 0 0 8px rgba(52,152,219,0.5);
+.dashboard table tr:hover {
+  background-color: #f9f9f9;
 }
