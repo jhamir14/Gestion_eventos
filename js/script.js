@@ -152,7 +152,7 @@ if (formEditar) {
                 }
                 if (mensaje) mensaje.innerText = 'Cambios guardados correctamente';
                 // Redirigir tras un breve delay
-                setTimeout(() => { window.location.href = 'index.html'; }, 800);
+                setTimeout(() => { window.location.href = 'eventos.html'; }, 800);
             } catch (err) {
                 console.error(err);
                 if (mensaje) mensaje.innerText = 'No se pudo guardar los cambios.';
