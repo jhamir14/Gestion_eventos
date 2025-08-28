@@ -1,0 +1,24 @@
+{
+  "name": "gestion_eventos",
+  "version": "1.0.0",
+  "description": "Un sistema web completo para gestionar eventos con interfaz HTML/CSS/JavaScript y backend Django REST API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhamir14/Gestion_eventos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhamir14/Gestion_eventos/issues"
+  },
+  "homepage": "https://github.com/jhamir14/Gestion_eventos#readme",
+  "devDependencies": {
+    "jest": "^30.1.0"
+  }
+}
+
