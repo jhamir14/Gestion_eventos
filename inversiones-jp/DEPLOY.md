@@ -1,40 +1,36 @@
-# Guía de Despliegue en Vercel - Inversiones JP
+# Cómo Publicar en Internet (Vercel)
 
-Esta aplicación está construida con Next.js 14+ y Tailwind CSS, y está lista para desplegarse en Vercel con configuración mínima.
+Para que tu sistema esté "prendido" siempre y accesible desde cualquier lugar, usaremos **Vercel**, que es gratuito y es la mejor opción para Next.js.
 
-## Pasos para el Despliegue
+## Paso 1: Subir tu código a GitHub
+Ya he guardado (commit) todos los cambios que hicimos hoy. Ahora solo necesitas enviarlos a la nube (GitHub).
 
-1.  **Subir a GitHub**
-    *   Asegúrate de que tu código esté subido a un repositorio de GitHub (público o privado).
-    *   Si creaste la carpeta dentro de otro repo, asegúrate de hacer push de todo.
-    *   Nota: Como la app está en una subcarpeta (`inversiones-jp`), Vercel necesitará configuración de "Root Directory".
+1. Abre tu terminal (donde corres el proyecto).
+2. Detén el servidor si está corriendo (Ctrl + C).
+3. Escribe el siguiente comando y dale Enter:
+   ```bash
+   git push origin main
+   ```
+   *(Si te pide contraseña o autenticación, sigue los pasos que te indique la ventana).*
 
-2.  **Crear Proyecto en Vercel**
-    *   Ve a [Vercel Dashboard](https://vercel.com/dashboard).
-    *   Haz clic en **"Add New..."** -> **"Project"**.
-    *   Importa tu repositorio de GitHub `Gestion_eventos` (o el nombre que tenga).
+## Paso 2: Crear el Proyecto en Vercel
+1. Entra a [vercel.com](https://vercel.com) y crea una cuenta (puedes iniciar sesión con tu GitHub, es lo más fácil).
+2. En tu "Dashboard" (panel principal), haz clic en el botón **"Add New..."** -> **"Project"**.
+3. Verás una lista de tus repositorios de GitHub. Busca **`Gestion_eventos`** y dale clic al botón **"Import"**.
 
-3.  **Configurar Root Directory**
-    *   Vercel detectará que tienes múltiples carpetas o te preguntará.
-    *   En la sección **Framework Preset**, asegúrate de que diga **Next.js**.
-    *   En **Root Directory**, haz clic en "Edit" y selecciona la carpeta `inversiones-jp`.
+## Paso 3: Configurar el Proyecto
+Vercel detectará que estás usando Next.js. Solo hay un detalle importante: tu proyecto está en una carpeta llamada `inversiones-jp`, no en la raíz.
 
-4.  **Configurar Variables de Entorno**
-    *   Esta aplicación usa `LocalStorage`, por lo que **NO requiere** variables de entorno de base de datos por ahora.
-    *   Si en el futuro usas Supabase, aquí agregarías `NEXT_PUBLIC_SUPABASE_URL` y `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+1. En la pantalla de "Configure Project":
+   - Busca donde dice **"Root Directory"** (Directorio Raíz).
+   - Dale clic a **"Edit"**.
+   - Selecciona la carpeta **`inversiones-jp`**.
+2. Dale clic a **"Deploy"**.
 
-5.  **Desplegar**
-    *   Haz clic en **"Deploy"**.
-    *   Espera a que termine el proceso de construcción (Build).
+## Paso 4: ¡Listo!
+Vercel tardará unos minutos en "construir" (Build) tu página. Cuando termine, te dará un **Link** (ejemplo: `inversiones-jp.vercel.app`).
 
-## Verificación
+¡Ese link es el que puedes compartir con tus clientes! La página estará activa las 24 horas.
 
-*   Una vez desplegado, Vercel te dará una URL (ej. `inversiones-jp.vercel.app`).
-*   Entra y prueba agregar un producto desde `/admin` (recuerda que los datos se guardan en el navegador de quien los agrega, para una demo real compartida necesitarías una base de datos real como Supabase).
-
-## Nota Importante sobre Persistencia
-
-Actualmente, la aplicación usa **LocalStorage**. Esto significa que:
-*   Si agregas un producto desde tu computadora, **SOLO TÚ** lo verás.
-*   Si abres la página en tu celular, estará vacía hasta que agregues productos desde el celular.
-*   **Para producción real**: Se recomienda migrar el `useStore` para usar un backend real (Supabase, Firebase o API propia).
+---
+**Nota:** Cada vez que hagamos cambios aquí y tú hagas `git push`, Vercel actualizará tu página automáticamente en unos minutos.
