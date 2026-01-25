@@ -42,8 +42,8 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'iPhone 14 128GB',
     image: 'https://promart.vteximg.com.br/arquivos/ids/9480088-700-700/imageUrl_1.jpg?v=638962778529230000',
     specifications: { ram: '6GB', storage: '128GB' },
-    priceCash: 2000,
-    initialPayment: 200,
+    priceCash: 2050,
+    initialPayment: 250,
     weeklyPayment: 150,
     weeks: 25
   },
@@ -53,8 +53,8 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'iPhone 15 128GB',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/498754/iPhone-15-128GB-6GB_2.jpg?v=638975178440230000',
     specifications: { ram: '6GB', storage: '128GB' },
-    priceCash: 2200,
-    initialPayment: 200,
+    priceCash: 2300,
+    initialPayment: 250,
     weeklyPayment: 150,
     weeks: 27
   },
@@ -64,9 +64,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'iPhone 16 128GB',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/412964-800-800?v=638727206727630000&width=800&height=800&aspect=true',
     specifications: { ram: '8GB', storage: '128GB' },
-    priceCash: 2900,
-    initialPayment: 200,
-    weeklyPayment: 150,
+    priceCash: 2800,
+    initialPayment: 300,
+    weeklyPayment: 180,
     weeks: 30
   },
   {
@@ -75,9 +75,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'iPhone 17 256GB eSIM',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/508046-800-800?v=639011535657570000&width=800&height=800&aspect=true', // Placeholder for 17
     specifications: { ram: '8GB', storage: '256GB' },
-    priceCash: 3600,
-    initialPayment: 200,
-    weeklyPayment: 150,
+    priceCash: 3500,
+    initialPayment: 300,
+    weeklyPayment: 210,
     weeks: 37
   },
   {
@@ -87,8 +87,8 @@ const INITIAL_PRODUCTS: Product[] = [
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/512334/Iphone-17-pro-max-deep-blue-conChip.jpg?v=639023810900630000', // Placeholder for 17PM
     specifications: { ram: '12GB', storage: '256GB' },
     priceCash: 5600,
-    initialPayment: 200,
-    weeklyPayment: 150,
+    initialPayment: 500,
+    weeklyPayment: 350,
     weeks: 50
   },
   {
@@ -97,9 +97,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Galaxy A26 5G 8/128GB',
     image: 'https://tse4.mm.bing.net/th/id/OIP.hXMH3UAvHS69I-n5u9Cj0wHaE8?rs=1&pid=ImgDetMain&o=7&rm=3',
     specifications: { ram: '8GB', storage: '128GB' },
-    priceCash: 800,
+    priceCash: 850,
     initialPayment: 150,
-    weeklyPayment: 130,
+    weeklyPayment: 125,
     weeks: 8
   },
   {
@@ -108,7 +108,7 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Galaxy A26 5G 8/256GB',
     image: 'https://oechsle.vteximg.com.br/arquivos/ids/21714228/imageUrl_1.jpg?v=638884171572500000',
     specifications: { ram: '8GB', storage: '256GB' },
-    priceCash: 900,
+    priceCash: 950,
     initialPayment: 150,
     weeklyPayment: 140,
     weeks: 8
@@ -121,7 +121,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 1150,
     initialPayment: 150,
-    weeklyPayment: 130,
+    weeklyPayment: 150,
     weeks: 10
   },
   {
@@ -130,9 +130,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Galaxy A56 5G 8/256GB',
     image: 'https://oechsle.vteximg.com.br/arquivos/ids/21679749/imageUrl_1.jpg?v=638879852166800000',
     specifications: { ram: '8GB', storage: '256GB' },
-    priceCash: 1300,
-    initialPayment: 150,
-    weeklyPayment: 130,
+    priceCash: 1350,
+    initialPayment: 200,
+    weeklyPayment: 155,
     weeks: 12
   },
   {
@@ -142,8 +142,8 @@ const INITIAL_PRODUCTS: Product[] = [
     image: 'https://oechsle.vteximg.com.br/arquivos/ids/21679768/imageUrl_1.jpg?v=638879852169800000',
     specifications: { ram: '12GB', storage: '256GB' },
     priceCash: 1500,
-    initialPayment: 150,
-    weeklyPayment: 130,
+    initialPayment: 200,
+    weeklyPayment: 150,
     weeks: 14
   },
   {
@@ -152,9 +152,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Galaxy S24 5G 12/256GB',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/459411/Galaxy-S24-Ultra-negro-256-12_1.jpg?v=638847609126930000',
     specifications: { ram: '12GB', storage: '256GB' },
-    priceCash: 2900,
-    initialPayment: 200,
-    weeklyPayment: 150,
+    priceCash: 2950,
+    initialPayment: 250,
+    weeklyPayment: 200,
     weeks: 30
   },
   {
@@ -164,8 +164,8 @@ const INITIAL_PRODUCTS: Product[] = [
     image: 'https://oechsle.vteximg.com.br/arquivos/ids/21333296-1000-1000/imageUrl_1.jpg?v=638853067939770000',
     specifications: { ram: '12GB', storage: '256GB' },
     priceCash: 3350,
-    initialPayment: 200,
-    weeklyPayment: 150,
+    initialPayment: 350,
+    weeklyPayment: 200,
     weeks: 34
   },
   {
@@ -175,8 +175,8 @@ const INITIAL_PRODUCTS: Product[] = [
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/494539/s25-ultra-512gb-12gb-Titanium-black_0.jpg?v=638962425906470000',
     specifications: { ram: '12GB', storage: '512GB' },
     priceCash: 3550,
-    initialPayment: 200,
-    weeklyPayment: 150,
+    initialPayment: 500,
+    weeklyPayment: 210,
     weeks: 36
   },
   {
@@ -185,9 +185,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Redmi 14C 8+8/256GB',
     image: 'https://www.lacuracao.pe/media/catalog/product/1/4/14cgreen_2_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700',
     specifications: { ram: '16GB (8+8)', storage: '256GB' },
-    priceCash: 400,
-    initialPayment: 100,
-    weeklyPayment: 120,
+    priceCash: 450,
+    initialPayment: 120,
+    weeklyPayment: 100,
     weeks: 4
   },
   {
@@ -196,9 +196,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Redmi 15C 4+4/256GB',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/510189/celular-xiaomi-redmi-15c-256gb-4gb-69pulgadas-negro-67515.jpg?v=639015858670700000',
     specifications: { ram: '8GB (4+4)', storage: '256GB' },
-    priceCash: 500,
-    initialPayment: 150,
-    weeklyPayment: 120,
+    priceCash: 550,
+    initialPayment: 120,
+    weeklyPayment: 100,
     weeks: 6
   },
   {
@@ -209,7 +209,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 700,
     initialPayment: 150,
-    weeklyPayment: 140,
+    weeklyPayment: 100,
     weeks: 8
   },
   {
@@ -218,9 +218,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Redmi Note 14 Pro 5G 8/256GB',
     image: 'https://plazavea.vteximg.com.br/arquivos/ids/30557896-465-465/20467859.jpg',
     specifications: { ram: '8GB', storage: '256GB' },
-    priceCash: 1100,
+    priceCash: 1000,
     initialPayment: 200,
-    weeklyPayment: 150,
+    weeklyPayment: 100,
     weeks: 13
   },
   {
@@ -241,9 +241,9 @@ const INITIAL_PRODUCTS: Product[] = [
     image: 'https://oechsle.vteximg.com.br/arquivos/ids/22209820-1000-1000/imageUrl_1.jpg?v=638939470801770000',
     specifications: { ram: '12GB', storage: '512GB' },
     priceCash: 1550,
-    initialPayment: 200,
-    weeklyPayment: 150,
-    weeks: 22
+    initialPayment: 300,
+    weeklyPayment: 120,
+    weeks: 20
   },
   {
     id: 'honor-x6c-256',
@@ -251,7 +251,7 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Honor X6C 8/256GB',
     image: 'https://www.infiniti.com.pe/web/image/product.template/11857/image_1024?unique=f706129',
     specifications: { ram: '8GB', storage: '256GB' },
-    priceCash: 500,
+    priceCash: 550,
     initialPayment: 150,
     weeklyPayment: 120,
     weeks: 4
@@ -264,7 +264,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 800,
     initialPayment: 150,
-    weeklyPayment: 130,
+    weeklyPayment: 120,
     weeks: 8
   },
   {
@@ -275,7 +275,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 750,
     initialPayment: 150,
-    weeklyPayment: 120,
+    weeklyPayment: 110,
     weeks: 8
   },
   {
@@ -286,7 +286,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 1000,
     initialPayment: 200,
-    weeklyPayment: 140,
+    weeklyPayment: 150,
     weeks: 10
   },
   {
@@ -297,7 +297,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '512GB' },
     priceCash: 1100,
     initialPayment: 200,
-    weeklyPayment: 150,
+    weeklyPayment: 130,
     weeks: 12
   },
   {
@@ -306,9 +306,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Honor Magic 7 Lite 8/256GB',
     image: 'https://media.falabella.com/falabellaPE/20980691_1/w=800,h=800,fit=pad',
     specifications: { ram: '8GB', storage: '256GB' },
-    priceCash: 1250,
+    priceCash: 1150,
     initialPayment: 200,
-    weeklyPayment: 150,
+    weeklyPayment: 110,
     weeks: 14
   },
   {
@@ -317,9 +317,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Honor Magic 7 Lite 8/512GB',
     image: 'https://media.falabella.com/falabellaPE/20980691_1/w=800,h=800,fit=pad?v=2', // Using same image as 256GB due to invalid URL provided
     specifications: { ram: '8GB', storage: '512GB' },
-    priceCash: 1400,
+    priceCash: 1300,
     initialPayment: 200,
-    weeklyPayment: 150,
+    weeklyPayment: 130,
     weeks: 16
   },
   {
@@ -328,9 +328,9 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Honor 400 Lite 5G 12/256GB',
     image: 'https://media.falabella.com/falabellaPE/147255419_01/w=1500,h=1500,fit=pad',
     specifications: { ram: '12GB', storage: '256GB' },
-    priceCash: 1000,
+    priceCash: 1050,
     initialPayment: 200,
-    weeklyPayment: 140,
+    weeklyPayment: 150,
     weeks: 10
   },
   {
@@ -341,7 +341,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '12GB', storage: '512GB' },
     priceCash: 1500,
     initialPayment: 200,
-    weeklyPayment: 150,
+    weeklyPayment: 130,
     weeks: 18
   },
   {
@@ -352,7 +352,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: 'N/A', storage: 'N/A' },
     priceCash: 550,
     initialPayment: 150,
-    weeklyPayment: 140,
+    weeklyPayment: 120,
     weeks: 4
   },
   {
@@ -363,7 +363,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: 'N/A', storage: 'N/A' },
     priceCash: 750,
     initialPayment: 150,
-    weeklyPayment: 140,
+    weeklyPayment: 130,
     weeks: 6
   },
   {
@@ -374,7 +374,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 850,
     initialPayment: 150,
-    weeklyPayment: 140,
+    weeklyPayment: 130,
     weeks: 7
   },
   {
@@ -383,10 +383,10 @@ const INITIAL_PRODUCTS: Product[] = [
     model: 'Nubia Neo 3 + Pack',
     image: 'https://media.falabella.com/tottusPE/43548727_1/w=800,h=800,fit=pad',
     specifications: { ram: '8GB', storage: '256GB' },
-    priceCash: 700,
+    priceCash: 850,
     initialPayment: 150,
     weeklyPayment: 130,
-    weeks: 6
+    weeks: 7
   },
   {
     id: 'nubia-neo-3-gt',
@@ -396,7 +396,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 950,
     initialPayment: 200,
-    weeklyPayment: 150,
+    weeklyPayment: 120,
     weeks: 10
   },
   {
@@ -406,8 +406,8 @@ const INITIAL_PRODUCTS: Product[] = [
     image: 'https://estilospe.vtexassets.com/arquivos/ids/3540725/SKU.jpg?v=638906135551330000',
     specifications: { ram: 'N/A', storage: 'N/A' },
     priceCash: 1100,
-    initialPayment: 20,
-    weeklyPayment: 150,
+    initialPayment: 200,
+    weeklyPayment: 130,
     weeks: 12
   },
   {
@@ -418,7 +418,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '4GB', storage: '256GB' },
     priceCash: 550,
     initialPayment: 150,
-    weeklyPayment: 130,
+    weeklyPayment: 120,
     weeks: 4
   },
   {
@@ -429,8 +429,8 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '4GB', storage: '512GB' },
     priceCash: 600,
     initialPayment: 150,
-    weeklyPayment: 130,
-    weeks: 5
+    weeklyPayment: 140,
+    weeks: 4
   },
   {
     id: 'moto-g56-256',
@@ -440,7 +440,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 800,
     initialPayment: 200,
-    weeklyPayment: 150,
+    weeklyPayment: 130,
     weeks: 6
   },
   {
@@ -451,7 +451,7 @@ const INITIAL_PRODUCTS: Product[] = [
     specifications: { ram: '8GB', storage: '256GB' },
     priceCash: 900,
     initialPayment: 200,
-    weeklyPayment: 150,
+    weeklyPayment: 125,
     weeks: 8
   },
 ];
