@@ -214,7 +214,7 @@ const INITIAL_PRODUCTS: Product[] = [
     priceCash: 5100,
     initialPayment: 500,
     weeklyPayment: 200,
-    weeks: 34
+    weeks: 38
   },
 
   // ==========================================
