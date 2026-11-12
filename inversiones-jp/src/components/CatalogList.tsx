@@ -27,10 +27,10 @@ export default function CatalogList() {
 
     if (filteredProducts.length === 0) {
         return (
-            <div className="flex flex-col items-center justify-center py-20 text-gray-500">
-                <ShoppingBag className="mb-4 h-16 w-16 text-gray-300" />
-                <h3 className="text-xl font-semibold">No se encontraron productos</h3>
-                <p>Prueba seleccionando otra marca o agrega productos en el Admin.</p>
+            <div className="flex flex-col items-center justify-center py-20 text-slate-400 rounded-3xl border border-slate-800 bg-slate-900/60 p-8 text-center">
+                <ShoppingBag className="mb-4 h-16 w-16 text-slate-600" />
+                <h3 className="text-xl font-bold text-white">No se encontraron productos</h3>
+                <p className="text-sm text-slate-400 mt-1">Prueba seleccionando otra marca o explora todas las opciones.</p>
             </div>
         );
     }

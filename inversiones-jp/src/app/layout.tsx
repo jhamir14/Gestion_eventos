@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Inversiones JP | Catálogo de Celulares",
-  description: "Compra tu celular al contado o financiado con Inversiones JP.",
+  title: "Inversiones JP | Catálogo de Celulares Financiados",
+  description: "Consigue tu celular con Inversiones JP. Planes de financiamiento accesibles en cuotas semanales.",
+  icons: {
+    icon: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-surface text-foreground`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-foreground min-h-screen`}
       >
         <Navbar />
         <main className="min-h-screen">

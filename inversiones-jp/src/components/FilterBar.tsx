@@ -23,22 +23,25 @@ export default function FilterBar() {
     };
 
     return (
-        <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-md w-full overflow-x-auto pb-4 pt-4 no-scrollbar border-b border-gray-100 mb-4 transition-all">
-            <div className="flex gap-2 px-2">
-                {BRANDS.map((brand) => (
-                    <button
-                        key={brand}
-                        onClick={() => handleSelect(brand)}
-                        className={cn(
-                            "rounded-full px-4 py-2 text-sm font-medium transition-all whitespace-nowrap border",
-                            currentBrand === brand
-                                ? "bg-secondary text-primary border-secondary shadow-md"
-                                : "bg-white text-gray-600 border-gray-200 hover:border-secondary hover:text-secondary"
-                        )}
-                    >
-                        {brand}
-                    </button>
-                ))}
+        <div className="sticky top-16 sm:top-20 z-20 w-full py-3 backdrop-blur-xl bg-slate-950/85 border-y border-slate-800/80 mb-6">
+            <div className="flex gap-2 overflow-x-auto no-scrollbar px-1 py-1">
+                {BRANDS.map((brand) => {
+                    const isSelected = currentBrand === brand;
+                    return (
+                        <button
+                            key={brand}
+                            onClick={() => handleSelect(brand)}
+                            className={cn(
+                                "rounded-full px-5 py-2 text-xs sm:text-sm font-bold transition-all whitespace-nowrap border cursor-pointer select-none",
+                                isSelected
+                                    ? "bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 text-white border-cyan-300 shadow-lg shadow-cyan-500/30 scale-102"
+                                    : "bg-slate-900/90 text-slate-300 border-slate-700/70 hover:bg-slate-800 hover:text-white hover:border-slate-600 active:scale-98"
+                            )}
+                        >
+                            {brand}
+                        </button>
+                    );
+                })}
             </div>
         </div>
     );
