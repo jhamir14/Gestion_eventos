@@ -39,37 +39,12 @@ interface StoreState {
 
 const INITIAL_PRODUCTS: Product[] = [
   // ==========================================
-  // APPLE / IPHONE (Sección intacta según pedido)
+  // APPLE / IPHONE
   // ==========================================
   {
-    id: 'iphone-14-128',
+    id: 'iphone-15',
     brand: 'Apple',
-    model: 'iPhone 14 128GB',
-    image: 'https://promart.vteximg.com.br/arquivos/ids/9480088-700-700/imageUrl_1.jpg?v=638962778529230000',
-    description: 'Diseño elegante con pantalla Super Retina XDR de 6.1 pulgadas, sistema avanzado de dos cámaras con modo Cine y chip A15 Bionic.',
-    specifications: {
-      ram: '6GB',
-      storage: '128GB',
-      network: '5G',
-      screen: '6.1" Super Retina XDR OLED',
-      rearCamera: '12 MP + 12 MP',
-      frontCamera: '12 MP TrueDepth',
-      processor: 'A15 Bionic',
-      battery: '3279 mAh',
-      charging: '20 W (MagSafe 15W)',
-      resistance: 'IP68',
-      aiExtras: 'Apple Photonic Engine',
-      accessories: 'Cable USB-C a Lightning'
-    },
-    priceCash: 2500,
-    initialPayment: 300,
-    weeklyPayment: 150,
-    weeks: 27
-  },
-  {
-    id: 'iphone-15-128',
-    brand: 'Apple',
-    model: 'iPhone 15 128GB',
+    model: 'iPhone 15',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/498754/iPhone-15-128GB-6GB_2.jpg?v=638975178440230000',
     description: 'Innovación con Dynamic Island, cámara principal de 48 MP con zoom 2x de calidad óptica y nuevo conector universal USB-C.',
     specifications: {
@@ -92,9 +67,9 @@ const INITIAL_PRODUCTS: Product[] = [
     weeks: 29
   },
   {
-    id: 'iphone-16-128',
+    id: 'iphone-16',
     brand: 'Apple',
-    model: 'iPhone 16 128GB',
+    model: 'iPhone 16',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/412964-800-800?v=638727206727630000&width=800&height=800&aspect=true',
     description: 'Equipado con el nuevo botón Control de Cámara táctil, potente chip A18 preparado para Apple Intelligence y batería de larga duración.',
     specifications: {
@@ -117,9 +92,34 @@ const INITIAL_PRODUCTS: Product[] = [
     weeks: 32
   },
   {
-    id: 'iphone-17-256-chip',
+    id: 'iphone-16-pro-max',
     brand: 'Apple',
-    model: 'iPhone 17 256GB (Chip)',
+    model: 'iPhone 16 Pro Max',
+    image: '/phones/iphone-16-pro-max.jpg',
+    description: 'Pantalla inmersiva de 6.9 pulgadas con bordes ultra delgados, chasis de titanio grado 5, botón Control de Cámara y chip A18 Pro con Apple Intelligence.',
+    specifications: {
+      ram: '8GB',
+      storage: '256GB',
+      network: '5G',
+      screen: '6.9" Super Retina XDR OLED ProMotion 120Hz',
+      rearCamera: '48 MP Fusión + 48 MP Ultra Gran Angular + 12 MP Telefoto 5x',
+      frontCamera: '12 MP TrueDepth',
+      processor: 'A18 Pro',
+      battery: '4685 mAh',
+      charging: '25 W (MagSafe 25W)',
+      resistance: 'IP68',
+      aiExtras: 'Apple Intelligence, Botón Control de Cámara, Titanio Grado 5',
+      accessories: 'Cable USB-C tejido'
+    },
+    priceCash: 4200,
+    initialPayment: 500,
+    weeklyPayment: 200,
+    weeks: 30
+  },
+  {
+    id: 'iphone-17',
+    brand: 'Apple',
+    model: 'iPhone 17',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/508046-800-800?v=639011535657570000&width=800&height=800&aspect=true',
     description: 'Próxima generación de Apple con pantalla ProMotion fluida a 120Hz, doble sensor de 48 MP y chip A19 con máxima eficiencia térmica.',
     specifications: {
@@ -142,9 +142,9 @@ const INITIAL_PRODUCTS: Product[] = [
     weeks: 35
   },
   {
-    id: 'iphone-17-pro-256-chip',
+    id: 'iphone-17-pro',
     brand: 'Apple',
-    model: 'iPhone 17 Pro 256GB (Chip)',
+    model: 'iPhone 17 Pro',
     image: 'https://coolboxpe.vtexassets.com/arquivos/ids/512334/Iphone-17-pro-max-deep-blue-conChip.jpg?v=639023810900630000',
     description: 'El estándar definitivo de la industria móvil: chasis de titanio de grado 5, triple cámara de 48 MP con telefoto 5x y chip A19 Pro.',
     specifications: {
@@ -165,6 +165,56 @@ const INITIAL_PRODUCTS: Product[] = [
     initialPayment: 300,
     weeklyPayment: 150,
     weeks: 40
+  },
+  {
+    id: 'iphone-17-pro-max',
+    brand: 'Apple',
+    model: 'iPhone 17 Pro Max',
+    image: '/phones/iphone-17-pro-max.jpg',
+    description: 'El buque insignia definitivo de Apple: máxima potencia con chip A19 Pro, pantalla expansiva de 6.9 pulgadas ProMotion a 120Hz y autonomía líder en la industria.',
+    specifications: {
+      ram: '12GB',
+      storage: '256GB',
+      network: '5G',
+      screen: '6.9" ProMotion 120Hz Always-On',
+      rearCamera: '48 MP + 48 MP + 48 MP Telefoto 5x',
+      frontCamera: '24 MP TrueDepth',
+      processor: 'A19 Pro',
+      battery: '4800 mAh',
+      charging: '35 W',
+      resistance: 'IP68',
+      aiExtras: 'Apple Intelligence Pro, ProRes 4K 120fps, Titanio',
+      accessories: 'Cable USB-C trenzado'
+    },
+    priceCash: 4600,
+    initialPayment: 500,
+    weeklyPayment: 200,
+    weeks: 32
+  },
+  {
+    id: 'iphone-18-pro-max',
+    brand: 'Apple',
+    model: 'iPhone 18 Pro Max',
+    image: '/phones/iphone-18-pro-max.jpg',
+    description: 'La cúspide de la tecnología móvil de Apple: procesador A20 Pro, sistema fotográfico Pro Fusion con zoom periscópico y batería de máxima duración.',
+    specifications: {
+      ram: '12GB',
+      storage: '256GB',
+      network: '5G',
+      screen: '6.9" ProMotion 120Hz Always-On Ultra HDR',
+      rearCamera: '48 MP Pro Fusion + 48 MP + 48 MP Periscopio 10x',
+      frontCamera: '24 MP TrueDepth',
+      processor: 'A20 Pro',
+      battery: '5000 mAh',
+      charging: '40 W',
+      resistance: 'IP68',
+      aiExtras: 'Apple Intelligence Neural V2, eSIM Avanzado',
+      accessories: 'Cable USB-C trenzado'
+    },
+    priceCash: 5100,
+    initialPayment: 500,
+    weeklyPayment: 200,
+    weeks: 34
   },
 
   // ==========================================
@@ -960,7 +1010,7 @@ export const useStore = create<StoreState>()(
         }),
     }),
     {
-      name: 'inversiones-jp-storage-v34', // Updated storage key to force refresh
+      name: 'inversiones-jp-storage-v35', // Updated storage key to force refresh
     }
   )
 );
