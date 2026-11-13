@@ -106,13 +106,13 @@ export function calculateCreditPlan(
 
   let recommendation = '';
   if (safePrice < 1000) {
-    recommendation = `Plan ideal de ${weeks} semanas con inicial de S/ ${initialPayment}. Tu cuota semanal es de solo S/ ${weeklyPayment}, rompiendo la barrera de los 100 soles.`;
+    recommendation = `Plan ideal de ${weeks} semanas con inicial desde S/ ${initialPayment}. Tu cuota semanal es de solo S/ ${weeklyPayment}, súper cómoda y accesible.`;
   } else if (safePrice <= 1500) {
-    recommendation = `Aprovechas la tasa preferencial del 10% mensual. En ${weeks} semanas tu cuota semanal de S/ ${weeklyPayment} se adapta cómodamente a tu presupuesto semanal.`;
+    recommendation = `En ${weeks} semanas tu cuota semanal es de solo S/ ${weeklyPayment}, adaptándose perfectamente a tus ingresos semanales.`;
   } else if (safePrice <= 2000) {
-    recommendation = `Beneficio de tasa reducida de 7.5% mensual. Llevas un celular de alta potencia con una inicial de S/ ${initialPayment} y cuotas ligeras de S/ ${weeklyPayment}.`;
+    recommendation = `Llévate este potente equipo con inicial desde S/ ${initialPayment} y cuotas semanales de S/ ${weeklyPayment} con entrega inmediata.`;
   } else {
-    recommendation = `Tasa premium del 5% mensual para iPhones y gama alta. En ${weeks} semanas estrenas el último modelo con cuotas sumamente accesibles de S/ ${weeklyPayment} por semana.`;
+    recommendation = `El plan perfecto para estrenar tu iPhone: en ${weeks} semanas con cuotas fijas de S/ ${weeklyPayment} semanales sin descapitalizarte.`;
   }
 
   return {
@@ -131,3 +131,4 @@ export function calculateCreditPlan(
     recommendation
   };
 }
+

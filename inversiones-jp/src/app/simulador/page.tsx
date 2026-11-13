@@ -22,8 +22,9 @@ export default async function SimulatorPage({ searchParams }: SimulatorPageProps
       </Link>
 
       <Suspense fallback={<div className="text-center py-20 text-slate-400">Cargando simulador de crédito...</div>}>
-        <CreditSimulator initialProductId={initialProductId} showTitle={true} />
+        <CreditSimulator initialProductId={initialProductId} />
       </Suspense>
     </div>
   );
 }
+
