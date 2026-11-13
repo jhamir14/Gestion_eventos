@@ -1,7 +1,8 @@
 import { Suspense } from 'react';
 import CatalogList from '@/components/CatalogList';
 import FilterBar from '@/components/FilterBar';
-import { ShieldCheck, Zap, Truck } from 'lucide-react';
+import Link from 'next/link';
+import { ShieldCheck, Zap, Truck, Calculator, ArrowRight } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -21,6 +22,18 @@ export default function Home() {
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
             Descubre los mejores smartphones con planes de financiamiento a tu medida. Llévate tu equipo hoy mismo con cuotas semanales fijas y entrega inmediata.
           </p>
+
+          {/* Quick CTA to Simulator */}
+          <div className="pt-1 flex flex-wrap items-center gap-3">
+            <Link
+              href="/simulador"
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 px-5 py-3 text-xs sm:text-sm font-black text-white shadow-lg shadow-cyan-500/25 transition-all hover:from-blue-500 hover:to-cyan-400 hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <Calculator className="h-4 w-4" />
+              Simular mi Crédito Semanal
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
 
           {/* Quick Value Badges */}
           <div className="flex flex-wrap items-center gap-4 pt-2 text-xs font-semibold text-slate-300">

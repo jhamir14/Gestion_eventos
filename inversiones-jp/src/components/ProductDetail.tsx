@@ -19,7 +19,8 @@ import {
     ShieldCheck,
     Sparkles,
     Package,
-    Wifi
+    Wifi,
+    Calculator
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -157,6 +158,14 @@ export default function ProductDetail({ id }: { id: string }) {
                                 <MessageCircle className="h-5 w-5" />
                                 Cotizar por WhatsApp
                             </a>
+
+                            <Link
+                                href={`/simulador?phone=${product.id}`}
+                                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950/80 border border-cyan-400/30 px-5 py-3 font-bold text-cyan-300 transition-all hover:bg-cyan-500/10 hover:border-cyan-400 text-xs sm:text-sm text-center"
+                            >
+                                <Calculator className="h-4 w-4 text-cyan-400" />
+                                Personalizar Inicial o Semanas en el Simulador
+                            </Link>
                         </div>
                     </div>
 

@@ -63,7 +63,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 2800,
     initialPayment: 300,
-    weeklyPayment: 150,
+    weeklyPayment: 117,
     weeks: 29
   },
   {
@@ -88,7 +88,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 3000,
     initialPayment: 300,
-    weeklyPayment: 150,
+    weeklyPayment: 118,
     weeks: 32
   },
   {
@@ -113,7 +113,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 4200,
     initialPayment: 500,
-    weeklyPayment: 200,
+    weeklyPayment: 170,
     weeks: 30
   },
   {
@@ -138,7 +138,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 3500,
     initialPayment: 300,
-    weeklyPayment: 150,
+    weeklyPayment: 131,
     weeks: 35
   },
   {
@@ -163,7 +163,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 4950,
     initialPayment: 300,
-    weeklyPayment: 150,
+    weeklyPayment: 174,
     weeks: 40
   },
   {
@@ -188,7 +188,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 4600,
     initialPayment: 500,
-    weeklyPayment: 200,
+    weeklyPayment: 179,
     weeks: 32
   },
   {
@@ -213,7 +213,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 5100,
     initialPayment: 500,
-    weeklyPayment: 200,
+    weeklyPayment: 179,
     weeks: 38
   },
 
@@ -242,7 +242,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 950,
     initialPayment: 150,
-    weeklyPayment: 107,
+    weeklyPayment: 97,
     weeks: 12
   },
   {
@@ -267,7 +267,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1150,
     initialPayment: 150,
-    weeklyPayment: 133,
+    weeklyPayment: 108,
     weeks: 12
   },
   {
@@ -292,7 +292,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1250,
     initialPayment: 150,
-    weeklyPayment: 147,
+    weeklyPayment: 119,
     weeks: 12
   },
   {
@@ -317,7 +317,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1350,
     initialPayment: 150,
-    weeklyPayment: 160,
+    weeklyPayment: 130,
     weeks: 12
   },
   {
@@ -342,7 +342,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1500,
     initialPayment: 150,
-    weeklyPayment: 180,
+    weeklyPayment: 146,
     weeks: 12
   },
   {
@@ -367,7 +367,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1550,
     initialPayment: 200,
-    weeklyPayment: 180,
+    weeklyPayment: 138,
     weeks: 12
   },
 
@@ -396,7 +396,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 950,
     initialPayment: 150,
-    weeklyPayment: 107,
+    weeklyPayment: 97,
     weeks: 12
   },
   {
@@ -421,7 +421,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1000,
     initialPayment: 150,
-    weeklyPayment: 113,
+    weeklyPayment: 92,
     weeks: 12
   },
   {
@@ -446,7 +446,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1100,
     initialPayment: 150,
-    weeklyPayment: 127,
+    weeklyPayment: 103,
     weeks: 12
   },
   {
@@ -471,7 +471,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1150,
     initialPayment: 150,
-    weeklyPayment: 133,
+    weeklyPayment: 108,
     weeks: 12
   },
   {
@@ -496,7 +496,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1200,
     initialPayment: 150,
-    weeklyPayment: 140,
+    weeklyPayment: 114,
     weeks: 12
   },
   {
@@ -521,7 +521,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1250,
     initialPayment: 150,
-    weeklyPayment: 147,
+    weeklyPayment: 119,
     weeks: 12
   },
 
@@ -550,7 +550,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1000,
     initialPayment: 150,
-    weeklyPayment: 113,
+    weeklyPayment: 92,
     weeks: 12
   },
   {
@@ -575,7 +575,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1150,
     initialPayment: 150,
-    weeklyPayment: 133,
+    weeklyPayment: 108,
     weeks: 12
   },
   {
@@ -600,7 +600,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1400,
     initialPayment: 150,
-    weeklyPayment: 167,
+    weeklyPayment: 135,
     weeks: 12
   },
   {
@@ -625,7 +625,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1700,
     initialPayment: 200,
-    weeklyPayment: 200,
+    weeklyPayment: 153,
     weeks: 12
   },
   {
@@ -650,7 +650,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1800,
     initialPayment: 200,
-    weeklyPayment: 213,
+    weeklyPayment: 163,
     weeks: 12
   },
   {
@@ -675,7 +675,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1900,
     initialPayment: 200,
-    weeklyPayment: 227,
+    weeklyPayment: 174,
     weeks: 12
   },
 
@@ -704,7 +704,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 900,
     initialPayment: 120,
-    weeklyPayment: 104,
+    weeklyPayment: 94,
     weeks: 12
   },
   {
@@ -729,7 +729,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1050,
     initialPayment: 150,
-    weeklyPayment: 120,
+    weeklyPayment: 98,
     weeks: 12
   },
   {
@@ -754,7 +754,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1100,
     initialPayment: 150,
-    weeklyPayment: 127,
+    weeklyPayment: 103,
     weeks: 12
   },
   {
@@ -779,7 +779,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1350,
     initialPayment: 150,
-    weeklyPayment: 160,
+    weeklyPayment: 130,
     weeks: 12
   },
   {
@@ -804,7 +804,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1400,
     initialPayment: 150,
-    weeklyPayment: 167,
+    weeklyPayment: 135,
     weeks: 12
   },
   {
@@ -829,7 +829,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1650,
     initialPayment: 200,
-    weeklyPayment: 193,
+    weeklyPayment: 148,
     weeks: 12
   },
 
@@ -858,7 +858,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1050,
     initialPayment: 150,
-    weeklyPayment: 120,
+    weeklyPayment: 98,
     weeks: 12
   },
   {
@@ -883,7 +883,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1400,
     initialPayment: 150,
-    weeklyPayment: 167,
+    weeklyPayment: 135,
     weeks: 12
   },
   {
@@ -908,7 +908,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1450,
     initialPayment: 150,
-    weeklyPayment: 173,
+    weeklyPayment: 141,
     weeks: 12
   },
   {
@@ -933,7 +933,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1500,
     initialPayment: 150,
-    weeklyPayment: 180,
+    weeklyPayment: 146,
     weeks: 12
   },
   {
@@ -958,7 +958,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1650,
     initialPayment: 200,
-    weeklyPayment: 193,
+    weeklyPayment: 148,
     weeks: 12
   },
   {
@@ -983,7 +983,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1700,
     initialPayment: 200,
-    weeklyPayment: 200,
+    weeklyPayment: 153,
     weeks: 12
   }
 ];
@@ -1010,7 +1010,7 @@ export const useStore = create<StoreState>()(
         }),
     }),
     {
-      name: 'inversiones-jp-storage-v35', // Updated storage key to force refresh
+      name: 'inversiones-jp-storage-v36', // Updated storage key to force refresh
     }
   )
 );

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Heart, ArrowRight } from 'lucide-react';
+import { Heart, ArrowRight, Calculator } from 'lucide-react';
 import { Product, useStore } from '@/store/useStore';
 import { cn, formatCurrency } from '@/lib/utils';
 
@@ -81,12 +81,22 @@ export default function ProductCard({ product }: ProductCardProps) {
                         </div>
                     </div>
 
-                    <Link
-                        href={`/product/${product.id}`}
-                        className="flex w-full items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 py-2.5 text-center text-xs sm:text-sm font-black text-white shadow-md shadow-blue-500/20 transition-all duration-200 hover:from-blue-500 hover:to-cyan-400 hover:shadow-cyan-500/30 hover:scale-[1.01] active:scale-[0.98]"
-                    >
-                        Ver Detalles <ArrowRight className="h-4 w-4" />
-                    </Link>
+                    <div className="grid grid-cols-2 gap-2">
+                        <Link
+                            href={`/simulador?phone=${product.id}`}
+                            className="flex items-center justify-center gap-1.5 rounded-xl bg-slate-950/80 border border-slate-700/80 py-2.5 text-center text-xs font-bold text-slate-300 transition-all hover:bg-slate-900 hover:text-cyan-300 hover:border-cyan-400/50"
+                        >
+                            <Calculator className="h-3.5 w-3.5 text-cyan-400" />
+                            Simular
+                        </Link>
+
+                        <Link
+                            href={`/product/${product.id}`}
+                            className="flex items-center justify-center gap-1 rounded-xl bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 py-2.5 text-center text-xs sm:text-sm font-black text-white shadow-md shadow-blue-500/20 transition-all duration-200 hover:from-blue-500 hover:to-cyan-400 hover:shadow-cyan-500/30 hover:scale-[1.01] active:scale-[0.98]"
+                        >
+                            Detalles <ArrowRight className="h-3.5 w-3.5" />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

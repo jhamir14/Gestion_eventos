@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Heart, Menu, Phone } from 'lucide-react';
+import { Heart, Menu, Phone, Calculator } from 'lucide-react';
 import { useStore } from '@/store/useStore';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
@@ -39,9 +39,16 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop Nav */}
-                    <div className="hidden md:flex items-center gap-6">
+                    <div className="hidden md:flex items-center gap-5">
                         <Link href="/" className="text-sm font-bold text-slate-200 hover:text-cyan-400 transition-colors">
                             Catálogo
+                        </Link>
+                        <Link
+                            href="/simulador"
+                            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-black text-cyan-300 hover:text-white transition-all bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-400/30 hover:bg-cyan-500/20 hover:border-cyan-400 shadow-sm"
+                        >
+                            <Calculator className="h-3.5 w-3.5 text-cyan-400" />
+                            Simulador
                         </Link>
                     </div>
 
@@ -90,6 +97,14 @@ export default function Navbar() {
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Catálogo Completo
+                        </Link>
+                        <Link
+                            href="/simulador"
+                            className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-bold text-cyan-300 hover:bg-slate-900"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            <Calculator className="h-4 w-4 text-cyan-400" />
+                            Simulador de Crédito
                         </Link>
                         <Link
                             href="https://wa.me/51920694641?text=Hola%20Inversiones%20JP,%20quisiera%20m%C3%A1s%20informaci%C3%B3n"
