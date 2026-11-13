@@ -20,7 +20,8 @@ import {
     Sparkles,
     Package,
     Wifi,
-    Calculator
+    Calculator,
+    Tag
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -136,16 +137,23 @@ export default function ProductDetail({ id }: { id: string }) {
                         </div>
 
                         <div className="space-y-4">
-                            <div className="flex items-center justify-between rounded-2xl bg-slate-950/80 p-4 border border-slate-800">
-                                <div className="flex flex-col">
-                                    <span className="text-xs text-slate-400 font-semibold">Pago Inicial</span>
-                                    <span className="text-xl sm:text-2xl font-black text-white">{formatCurrency(product.initialPayment)}</span>
+                            <div className="rounded-2xl bg-slate-950/80 p-4 border border-slate-800 space-y-3">
+                                <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
+                                    <span className="text-xs text-slate-400 font-semibold flex items-center gap-1.5">
+                                        <Tag className="h-3.5 w-3.5 text-cyan-400" /> Precio al Contado
+                                    </span>
+                                    <span className="text-xl sm:text-2xl font-black text-white">{formatCurrency(product.priceCash)}</span>
                                 </div>
-                                <div className="h-10 w-px bg-slate-800"></div>
-                                <div className="flex flex-col text-right">
-                                    <span className="text-xs text-slate-400 font-semibold">Cuota Semanal</span>
-                                    <span className="text-xl sm:text-2xl font-black text-cyan-400">{formatCurrency(product.weeklyPayment)}</span>
-                                    <span className="text-[11px] text-slate-500 font-medium">durante {product.weeks} semanas</span>
+                                <div className="flex items-center justify-between pt-1">
+                                    <div className="flex flex-col">
+                                        <span className="text-xs text-slate-400 font-semibold">Pago Inicial</span>
+                                        <span className="text-lg sm:text-xl font-black text-slate-200">{formatCurrency(product.initialPayment)}</span>
+                                    </div>
+                                    <div className="flex flex-col text-right">
+                                        <span className="text-xs text-slate-400 font-semibold">Cuota Semanal</span>
+                                        <span className="text-lg sm:text-xl font-black text-cyan-400">{formatCurrency(product.weeklyPayment)}</span>
+                                        <span className="text-[10px] text-slate-500 font-medium">x {product.weeks} semanas</span>
+                                    </div>
                                 </div>
                             </div>
 

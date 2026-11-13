@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Heart, ArrowRight, Calculator } from 'lucide-react';
+import { Heart, ArrowRight, Calculator, Tag } from 'lucide-react';
 import { Product, useStore } from '@/store/useStore';
 import { cn, formatCurrency } from '@/lib/utils';
 
@@ -67,6 +67,15 @@ export default function ProductCard({ product }: ProductCardProps) {
                 <div className="mt-4 space-y-3">
                     <div className="rounded-xl border border-slate-800/90 bg-slate-950/90 p-2.5 sm:p-3 shadow-inner">
                         <div className="flex items-center justify-between pb-1.5 border-b border-slate-800/80 text-xs">
+                            <span className="flex items-center gap-1.5 font-semibold text-slate-400">
+                                <Tag className="h-3 w-3 text-cyan-400 flex-shrink-0" />
+                                Precio al Contado
+                            </span>
+                            <span className="font-black text-slate-100 text-xs sm:text-sm">
+                                {formatCurrency(product.priceCash)}
+                            </span>
+                        </div>
+                        <div className="flex items-center justify-between py-1.5 border-b border-slate-800/80 text-xs">
                             <span className="font-semibold text-slate-400">Pago Inicial</span>
                             <span className="font-black text-white text-xs sm:text-sm">{formatCurrency(product.initialPayment)}</span>
                         </div>
