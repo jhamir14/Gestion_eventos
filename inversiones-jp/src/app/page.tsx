@@ -39,7 +39,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-4 pt-2 text-xs font-semibold text-slate-300">
             <div className="flex items-center gap-1.5 bg-slate-900/80 border border-slate-800 px-3 py-1.5 rounded-lg text-cyan-300">
               <Zap className="h-4 w-4 text-cyan-400" />
-              <span>Planes en 12 Semanas</span>
+              <span>Planes en 16 Semanas</span>
             </div>
             <div className="flex items-center gap-1.5 bg-slate-900/80 border border-slate-800 px-3 py-1.5 rounded-lg text-blue-300">
               <ShieldCheck className="h-4 w-4 text-blue-400" />

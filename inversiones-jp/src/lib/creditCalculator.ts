@@ -19,7 +19,7 @@ export const CREDIT_TIERS: CreditTier[] = [
     name: 'Gama Económica',
     badge: 'Tasa 15% Mensual',
     badgeColor: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30',
-    defaultWeeks: 12,
+    defaultWeeks: 16,
     recommendedInitial: 120
   },
   {
@@ -30,26 +30,37 @@ export const CREDIT_TIERS: CreditTier[] = [
     name: 'Gama Media',
     badge: 'Tasa Preferencial 10% Mensual',
     badgeColor: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30',
-    defaultWeeks: 12,
+    defaultWeeks: 16,
     recommendedInitial: 150
   },
   {
     minPrice: 1501,
     maxPrice: 2000,
-    monthlyRate: 0.075,
-    monthlyRatePercent: 7.5,
+    monthlyRate: 0.08,
+    monthlyRatePercent: 8,
     name: 'Gama Media-Alta',
-    badge: 'Tasa Reducida 7.5% Mensual',
+    badge: 'Tasa Reducida 8% Mensual',
     badgeColor: 'text-blue-400 bg-blue-500/10 border-blue-500/30',
-    defaultWeeks: 12,
+    defaultWeeks: 16,
     recommendedInitial: 200
   },
   {
     minPrice: 2001,
+    maxPrice: 3000,
+    monthlyRate: 0.075,
+    monthlyRatePercent: 7.5,
+    name: 'Gama Alta / Entrada Premium',
+    badge: 'Tasa Especial 7.5% Mensual',
+    badgeColor: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/30',
+    defaultWeeks: 16,
+    recommendedInitial: 300
+  },
+  {
+    minPrice: 3001,
     maxPrice: 99999,
     monthlyRate: 0.05,
     monthlyRatePercent: 5,
-    name: 'Gama Premium / iPhone',
+    name: 'Gama Premium / iPhone Flagship',
     badge: 'Tasa Exclusiva 5% Mensual',
     badgeColor: 'text-purple-400 bg-purple-500/10 border-purple-500/30',
     defaultWeeks: 30,
@@ -111,8 +122,10 @@ export function calculateCreditPlan(
     recommendation = `En ${weeks} semanas tu cuota semanal es de solo S/ ${weeklyPayment}, adaptándose perfectamente a tus ingresos semanales.`;
   } else if (safePrice <= 2000) {
     recommendation = `Llévate este potente equipo con inicial desde S/ ${initialPayment} y cuotas semanales de S/ ${weeklyPayment} con entrega inmediata.`;
+  } else if (safePrice <= 3000) {
+    recommendation = `Excelente plan de ${weeks} semanas con inicial de S/ ${initialPayment} y cuotas de S/ ${weeklyPayment} semanales con tasa preferencial del 7.5%.`;
   } else {
-    recommendation = `El plan perfecto para estrenar tu iPhone: en ${weeks} semanas con cuotas fijas de S/ ${weeklyPayment} semanales sin descapitalizarte.`;
+    recommendation = `El plan perfecto para estrenar tu iPhone o gama insignia: en ${weeks} semanas con cuotas fijas de S/ ${weeklyPayment} semanales sin descapitalizarte.`;
   }
 
   return {

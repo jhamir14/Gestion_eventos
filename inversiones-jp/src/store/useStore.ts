@@ -63,7 +63,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 2800,
     initialPayment: 300,
-    weeklyPayment: 117,
+    weeklyPayment: 133,
     weeks: 29
   },
   {
@@ -88,7 +88,7 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 3000,
     initialPayment: 300,
-    weeklyPayment: 118,
+    weeklyPayment: 135,
     weeks: 32
   },
   {
@@ -211,9 +211,9 @@ const INITIAL_PRODUCTS: Product[] = [
       aiExtras: 'Apple Intelligence Neural V2, eSIM Avanzado',
       accessories: 'Cable USB-C trenzado'
     },
-    priceCash: 5100,
+    priceCash: 6400,
     initialPayment: 500,
-    weeklyPayment: 179,
+    weeklyPayment: 229,
     weeks: 38
   },
 
@@ -242,8 +242,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 950,
     initialPayment: 150,
-    weeklyPayment: 97,
-    weeks: 12
+    weeklyPayment: 80,
+    weeks: 16
   },
   {
     id: 'samsung-a27-5g-128',
@@ -267,8 +267,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1150,
     initialPayment: 150,
-    weeklyPayment: 108,
-    weeks: 12
+    weeklyPayment: 88,
+    weeks: 16
   },
   {
     id: 'samsung-a36-5g-128',
@@ -292,8 +292,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1250,
     initialPayment: 150,
-    weeklyPayment: 119,
-    weeks: 12
+    weeklyPayment: 96,
+    weeks: 16
   },
   {
     id: 'samsung-a54-5g-256',
@@ -317,8 +317,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1350,
     initialPayment: 150,
-    weeklyPayment: 130,
-    weeks: 12
+    weeklyPayment: 105,
+    weeks: 16
   },
   {
     id: 'samsung-a56-5g-256',
@@ -340,10 +340,10 @@ const INITIAL_PRODUCTS: Product[] = [
       aiExtras: 'Circle to Search, Best Face (eSIM SKU PE)',
       accessories: 'USB-C; consultar caja'
     },
-    priceCash: 1500,
-    initialPayment: 150,
-    weeklyPayment: 146,
-    weeks: 12
+    priceCash: 1600,
+    initialPayment: 200,
+    weeklyPayment: 116,
+    weeks: 16
   },
   {
     id: 'samsung-a57-5g-256',
@@ -365,10 +365,10 @@ const INITIAL_PRODUCTS: Product[] = [
       aiExtras: 'Best Face; Borrador, Transcripción voz',
       accessories: 'USB-C; consultar caja'
     },
-    priceCash: 1550,
+    priceCash: 1800,
     initialPayment: 200,
-    weeklyPayment: 138,
-    weeks: 12
+    weeklyPayment: 132,
+    weeks: 16
   },
 
   // ==========================================
@@ -396,8 +396,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 950,
     initialPayment: 150,
-    weeklyPayment: 97,
-    weeks: 12
+    weeklyPayment: 80,
+    weeks: 16
   },
   {
     id: 'nubia-air-5g-256',
@@ -421,8 +421,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1000,
     initialPayment: 150,
-    weeklyPayment: 92,
-    weeks: 12
+    weeklyPayment: 74,
+    weeks: 16
   },
   {
     id: 'nubia-neo-5-5g-256',
@@ -446,8 +446,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1100,
     initialPayment: 150,
-    weeklyPayment: 103,
-    weeks: 12
+    weeklyPayment: 83,
+    weeks: 16
   },
   {
     id: 'nubia-focus-2-ultra-512',
@@ -471,8 +471,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1150,
     initialPayment: 150,
-    weeklyPayment: 108,
-    weeks: 12
+    weeklyPayment: 88,
+    weeks: 16
   },
   {
     id: 'nubia-focus-pro-5g-256',
@@ -496,8 +496,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1200,
     initialPayment: 150,
-    weeklyPayment: 114,
-    weeks: 12
+    weeklyPayment: 92,
+    weeks: 16
   },
   {
     id: 'nubia-neo-5-gt-5g-256',
@@ -521,12 +521,12 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1250,
     initialPayment: 150,
-    weeklyPayment: 119,
-    weeks: 12
+    weeklyPayment: 96,
+    weeks: 16
   },
 
   // ==========================================
-  // HONOR (6 modelos oficiales del catálogo)
+  // HONOR (7 modelos oficiales del catálogo)
   // ==========================================
   {
     id: 'honor-x7d-5g-256',
@@ -550,8 +550,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1000,
     initialPayment: 150,
-    weeklyPayment: 92,
-    weeks: 12
+    weeklyPayment: 74,
+    weeks: 16
   },
   {
     id: 'honor-x8c-5g-256',
@@ -575,8 +575,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1150,
     initialPayment: 150,
-    weeklyPayment: 108,
-    weeks: 12
+    weeklyPayment: 88,
+    weeks: 16
   },
   {
     id: 'honor-400-lite-5g-256',
@@ -600,8 +600,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1400,
     initialPayment: 150,
-    weeklyPayment: 135,
-    weeks: 12
+    weeklyPayment: 109,
+    weeks: 16
   },
   {
     id: 'honor-magic-7-lite-256',
@@ -625,8 +625,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1700,
     initialPayment: 200,
-    weeklyPayment: 153,
-    weeks: 12
+    weeklyPayment: 124,
+    weeks: 16
   },
   {
     id: 'honor-magic-8-lite-512',
@@ -650,8 +650,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1800,
     initialPayment: 200,
-    weeklyPayment: 163,
-    weeks: 12
+    weeklyPayment: 132,
+    weeks: 16
   },
   {
     id: 'honor-400-5g-512',
@@ -675,8 +675,33 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1900,
     initialPayment: 200,
-    weeklyPayment: 174,
-    weeks: 12
+    weeklyPayment: 140,
+    weeks: 16
+  },
+  {
+    id: 'honor-400-pro-5g-512',
+    brand: 'Honor',
+    model: 'Honor 400 Pro 5G',
+    image: '/phones/honor-400-pro-5g.jpg',
+    description: 'Potencia insignia con Snapdragon 8s Gen 3, modo retrato profesional Studio Harcourt, carga hiperrápida de 100W e inalámbrica de 66W.',
+    specifications: {
+      ram: '12GB',
+      storage: '512GB',
+      network: '5G',
+      screen: '6.78" AMOLED 1.5K · 120 Hz Quad-Curved',
+      rearCamera: '50 MP OIS + 50 MP Telefoto 2.5x + 12 MP Ultra Gran Angular',
+      frontCamera: '50 MP + Sensor de profundidad',
+      processor: 'Snapdragon 8s Gen 3',
+      battery: '5200 mAh',
+      charging: '100 W (66W inalámbrica)',
+      resistance: 'IP65',
+      aiExtras: 'AI Portrait Studio Harcourt, Gemini, MagicOS 9',
+      accessories: 'Cargador 100W SuperCharge + cable'
+    },
+    priceCash: 2600,
+    initialPayment: 300,
+    weeklyPayment: 187,
+    weeks: 16
   },
 
   // ==========================================
@@ -704,8 +729,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 900,
     initialPayment: 120,
-    weeklyPayment: 94,
-    weeks: 12
+    weeklyPayment: 78,
+    weeks: 16
   },
   {
     id: 'xiaomi-note-15-4g-256',
@@ -729,33 +754,33 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1050,
     initialPayment: 150,
-    weeklyPayment: 98,
-    weeks: 12
+    weeklyPayment: 79,
+    weeks: 16
   },
   {
-    id: 'xiaomi-note-14-pro-4g-256',
+    id: 'xiaomi-note-14-pro-5g-256',
     brand: 'Xiaomi',
-    model: 'Redmi Note 14 Pro 4G',
+    model: 'Redmi Note 14 Pro 5G',
     image: '/phones/redmi-note-14-pro-4g.jpg',
-    description: 'Sensor insignia de 200 MP con estabilización óptica OIS, selfie de 32 MP, carga rápida de 45W y pantalla AMOLED curva de gran nitidez.',
+    description: 'Sensor insignia de 200 MP con estabilización óptica OIS, selfie de 32 MP, conectividad 5G, carga rápida de 45W y pantalla AMOLED curva.',
     specifications: {
       ram: '8GB',
       storage: '256GB',
-      network: '4G',
+      network: '5G',
       screen: '6.67" AMOLED FHD+ · 120 Hz',
       rearCamera: '200 OIS + 8 + 2 MP',
       frontCamera: '32 MP',
-      processor: 'Helio G100-Ultra',
+      processor: 'Dimensity 7300-Ultra',
       battery: '5500 mAh',
       charging: '45 W',
-      resistance: 'IP64',
+      resistance: 'IP68',
       aiExtras: 'Gemini; edición IA HyperOS',
       accessories: 'Cargador 45W'
     },
-    priceCash: 1100,
+    priceCash: 1250,
     initialPayment: 150,
-    weeklyPayment: 103,
-    weeks: 12
+    weeklyPayment: 96,
+    weeks: 16
   },
   {
     id: 'xiaomi-note-15-pro-4g-512',
@@ -777,10 +802,10 @@ const INITIAL_PRODUCTS: Product[] = [
       aiExtras: 'Circle to Search, Editor de imagen IA',
       accessories: 'Cargador 45W'
     },
-    priceCash: 1350,
+    priceCash: 1500,
     initialPayment: 150,
-    weeklyPayment: 130,
-    weeks: 12
+    weeklyPayment: 118,
+    weeks: 16
   },
   {
     id: 'xiaomi-poco-x7-pro-512',
@@ -802,10 +827,10 @@ const INITIAL_PRODUCTS: Product[] = [
       aiExtras: 'Gemini; Game Turbo HyperOS',
       accessories: 'Ver caja de región'
     },
-    priceCash: 1400,
+    priceCash: 1450,
     initialPayment: 150,
-    weeklyPayment: 135,
-    weeks: 12
+    weeklyPayment: 114,
+    weeks: 16
   },
   {
     id: 'xiaomi-poco-x8-pro-512',
@@ -829,8 +854,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1650,
     initialPayment: 200,
-    weeklyPayment: 148,
-    weeks: 12
+    weeklyPayment: 120,
+    weeks: 16
   },
 
   // ==========================================
@@ -858,8 +883,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1050,
     initialPayment: 150,
-    weeklyPayment: 98,
-    weeks: 12
+    weeklyPayment: 79,
+    weeks: 16
   },
   {
     id: 'moto-g77-5g-256',
@@ -883,8 +908,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1400,
     initialPayment: 150,
-    weeklyPayment: 135,
-    weeks: 12
+    weeklyPayment: 109,
+    weeks: 16
   },
   {
     id: 'moto-edge-50-fusion-256',
@@ -908,8 +933,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1450,
     initialPayment: 150,
-    weeklyPayment: 141,
-    weeks: 12
+    weeklyPayment: 114,
+    weeks: 16
   },
   {
     id: 'moto-g86-power-256',
@@ -933,8 +958,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1500,
     initialPayment: 150,
-    weeklyPayment: 146,
-    weeks: 12
+    weeklyPayment: 118,
+    weeks: 16
   },
   {
     id: 'moto-edge-70-fusion-256',
@@ -958,8 +983,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1650,
     initialPayment: 200,
-    weeklyPayment: 148,
-    weeks: 12
+    weeklyPayment: 120,
+    weeks: 16
   },
   {
     id: 'moto-edge-50-buds-256',
@@ -983,8 +1008,8 @@ const INITIAL_PRODUCTS: Product[] = [
     },
     priceCash: 1700,
     initialPayment: 200,
-    weeklyPayment: 153,
-    weeks: 12
+    weeklyPayment: 124,
+    weeks: 16
   }
 ];
 
@@ -1010,7 +1035,7 @@ export const useStore = create<StoreState>()(
         }),
     }),
     {
-      name: 'inversiones-jp-storage-v36', // Updated storage key to force refresh
+      name: 'inversiones-jp-storage-v38', // Updated storage key to force refresh
     }
   )
 );

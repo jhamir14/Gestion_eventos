@@ -58,16 +58,16 @@ export default function CreditSimulator({ initialProductId }: CreditSimulatorPro
 
   const [weeks, setWeeks] = useState<number>(() => {
     if (selectedProduct) {
-      return selectedProduct.weeks || 12;
+      return selectedProduct.weeks || 16;
     }
-    return 12;
+    return 16;
   });
 
   // When selectedProduct changes, update defaults
   useEffect(() => {
     if (selectedProduct) {
       setInitialPayment(Math.max(MIN_INITIAL, selectedProduct.initialPayment || MIN_INITIAL));
-      setWeeks(selectedProduct.weeks || (selectedProduct.brand === 'Apple' ? 30 : 12));
+      setWeeks(selectedProduct.weeks || (selectedProduct.brand === 'Apple' ? 30 : 16));
     }
   }, [selectedProduct]);
 
@@ -80,7 +80,7 @@ export default function CreditSimulator({ initialProductId }: CreditSimulatorPro
   const isApple = selectedProduct?.brand === 'Apple' || currentPrice > 2000;
   const weekOptions = isApple
     ? [16, 24, 30, 32, 36, 38]
-    : [8, 12, 16, 20, 24];
+    : [8, 12, 14, 16, 20, 24];
 
   // Quick initial options starting strictly from S/ 100
   const maxInitial = Math.max(MIN_INITIAL + 50, Math.round(currentPrice * 0.6));
@@ -285,7 +285,7 @@ export default function CreditSimulator({ initialProductId }: CreditSimulatorPro
             <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
               {weekOptions.map((w) => {
                 const isSelected = weeks === w;
-                const isRecommended = (isApple && w === 30) || (!isApple && w === 12);
+                const isRecommended = (isApple && w === 30) || (!isApple && w === 16);
                 return (
                   <button
                     key={w}

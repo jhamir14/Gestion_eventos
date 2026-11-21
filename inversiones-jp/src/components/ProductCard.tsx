@@ -82,7 +82,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                         <div className="flex items-baseline justify-between pt-1.5">
                             <div>
                                 <span className="text-[11px] sm:text-xs font-bold text-slate-200 block">Cuota Semanal</span>
-                                <span className="text-[10px] text-cyan-400/90 font-medium">x {product.weeks || 12} semanas</span>
+                                <span className="text-[10px] text-cyan-400/90 font-medium">x {product.weeks || 16} semanas</span>
                             </div>
                             <span className="text-lg sm:text-xl font-black text-cyan-400 drop-shadow-[0_0_10px_rgba(34,211,238,0.25)]">
                                 {formatCurrency(product.weeklyPayment)}

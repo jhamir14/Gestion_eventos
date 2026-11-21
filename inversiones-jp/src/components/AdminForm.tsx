@@ -187,7 +187,7 @@ export default function AdminForm() {
                         name="weeks"
                         value={formData.weeks}
                         onChange={handleChange}
-                        placeholder="12"
+                        placeholder="16"
                         className="w-full rounded-xl border border-slate-700 bg-slate-900 p-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
                     />
                 </div>
